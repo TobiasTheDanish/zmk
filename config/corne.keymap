@@ -70,10 +70,10 @@
 
             display-name = "right";
             bindings = <
-&none  &kp DA_N1  &kp DA_N2  &kp DA_N3  &trans     &trans    &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_PAUSE  &kp K_NEXT  &kp C_VOLUME_UP    &none
-&none  &kp DA_N4  &kp DA_N5  &kp DA_N6  &trans     &trans    &kp LEFT        &kp DOWN          &kp UP       &kp RIGHT   &kp C_VOLUME_DOWN  &none
-&none  &kp DA_N7  &kp DA_N8  &kp DA_N9  &kp DA_N0  &trans    &kp HOME        &kp PAGE_DOWN     &kp PAGE_UP  &kp END     &kp K_MUTE         &none
-                             &trans     &trans     &trans    &trans          &trans            &trans
+&none  &kp DA_N1  &kp DA_N2  &kp DA_N3  &kp LG(DA_C)  &kp LG(DA_V)    &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_PAUSE  &kp K_NEXT  &kp C_VOLUME_UP    &none
+&none  &kp DA_N4  &kp DA_N5  &kp DA_N6  &trans        &trans          &kp LEFT        &kp DOWN          &kp UP       &kp RIGHT   &kp C_VOLUME_DOWN  &none
+&none  &kp DA_N7  &kp DA_N8  &kp DA_N9  &kp DA_N0     &trans          &kp HOME        &kp PAGE_DOWN     &kp PAGE_UP  &kp END     &kp K_MUTE         &none
+                             &trans     &trans        &trans          &trans          &trans            &trans
             >;
         };
 
