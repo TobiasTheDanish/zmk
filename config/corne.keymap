@@ -79,10 +79,10 @@
 
         tri {
             bindings = <
-&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
-&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
-&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
-                     &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp LG(DA_N1)  &kp LG(DA_N2)  &kp LG(DA_N3)  &kp LG(DA_N4)  &kp LG(DA_N5)    &none   &none   &none   &none  &none  &none
+&none  &none          &none          &none          &none          &none            &none   &none   &none   &none  &none  &none
+&none  &none          &none          &none          &none          &none            &none   &none   &none   &none  &none  &none
+                                     &trans         &trans         &trans           &trans  &trans  &trans
             >;
         };
 
