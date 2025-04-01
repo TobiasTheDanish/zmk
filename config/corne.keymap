@@ -91,16 +91,6 @@
         extra_2 { status = "reserved"; };
 
         extra_3 { status = "reserved"; };
-
-        backup {
-            display-name = "left";
-            bindings = <
-&none  &kp DA_EXCL           &kp DA_AT                 &kp DA_HASH        &kp DA_DOLLAR         &kp DA_PERCENT    &kp DA_CARET      &kp DA_AMPS        &kp DA_STAR   &kp DA_GRAVE  &kp DA_TILDE    &none
-&none  &kp DA_DOUBLE_QUOTES  &kp DA_LEFT_PARENTHESIS   &kp LS(LA(DA_N8))  &kp DA_LEFT_BRACKET   &none             &kp DA_SLASH      &kp DA_MINUS       &kp DA_PLUS   &kp DA_PIPE   &kp DA_A_RING   &none
-&none  &kp DA_SINGLE_QUOTE   &kp DA_RIGHT_PARENTHESIS  &kp LS(LA(DA_N9))  &kp DA_RIGHT_BRACKET  &none             &kp DA_BACKSLASH  &kp DA_UNDERSCORE  &kp DA_EQUAL  &kp DA_AE     &kp DA_O_SLASH  &none
-                                                       &trans             &trans                &trans            &trans            &trans             &trans
-            >;
-        };
     };
 
     conditional_layers {
