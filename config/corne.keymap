@@ -22,7 +22,9 @@
             quick-tap-ms = <180>;
             global-quick-tap;
         };
-    }
+    };
+
+    //
 
     keymap {
         compatible = "zmk,keymap";
