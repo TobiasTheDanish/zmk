@@ -39,12 +39,11 @@
         compatible = "zmk,keymap";
 
         base {
-
             display-name = "base";
             bindings = <
-&none  &kp Q               &kp W              &kp E                &kp R                  &kp T        &kp Y    &kp U                   &kp I                 &kp O               &kp P                    &none
-&none  &hm LEFT_META DA_A  &hm LEFT_ALT DA_S  &hm LEFT_SHIFT DA_D  &hm LEFT_CONTROL DA_F  &kp G        &kp H    &hm RIGHT_CONTROL DA_J  &hm RIGHT_SHIFT DA_K  &hm RIGHT_ALT DA_L  &hm RIGHT_META SEMI      &none
-&none  &kp Z               &kp X              &kp C                &kp V                  &kp B        &kp N    &kp M                   &mt DA_LT DA_COMMA    &mt DA_GT DA_DOT    &mt DA_FSLH DA_QUESTION  &none
+&none  &kp Q               &kp W              &kp E                &kp R                  &kp T        &kp Y    &kp U                   &kp I                 &kp O               &kp P                     &none
+&none  &hm LEFT_META DA_A  &hm LEFT_ALT DA_S  &hm LEFT_SHIFT DA_D  &hm LEFT_CONTROL DA_F  &kp G        &kp H    &hm RIGHT_CONTROL DA_J  &hm RIGHT_SHIFT DA_K  &hm RIGHT_ALT DA_L  &hm RIGHT_META DA_A_RING  &none
+&none  &kp Z               &kp X              &kp C                &kp V                  &kp B        &kp N    &kp M                   &kp DA_COMMA          &kp DA_PERIOD       &mt DA_AE DA_O_SLASH      &none
                                               &kp ESCAPE           &lt 2 TAB              &kp SPACE    &kp RET  &lt 1 BACKSPACE         &kp LA(BACKSPACE)
             >;
         };
@@ -58,10 +57,10 @@
 
             display-name = "left";
             bindings = <
-&none    &kp DA_LEFT_PARENTHESIS  &kp DA_RIGHT_PARENTHESIS  &kp DA_DOUBLE_QUOTES  &kp DA_SINGLE_QUOTE  &kp DA_A_RING       &kp DA_FSLH       &kp DA_AT       &kp DA_UNDERSCORE  &kp DA_PLUS       &kp DA_MINUS    &none    
-&none    &kp LS(LA(DA_N8))        &kp LS(LA(DA_N9))         &kp DA_DOLLAR         &kp DA_GRAVE         &kp DA_O_SLASH      &kp DA_BACKSLASH  &kp DA_PERCENT  &kp DA_PIPE        &kp DA_AMPERSAND  &kp DA_STAR     &none     
-&none    &kp DA_LEFT_BRACKET      &kp DA_RIGHT_BRACKET      &kp DA_EXCLAMATION    &kp DA_EQUAL         &kp DA_AE       &kp DA_CARET      &kp DA_HASH     &kp DA_TILDE       &kp DA_LT         &kp DA_GT           &none       
-                                         &trans             &trans            &trans          &trans                   &trans                    &trans
+&none  &kp DA_EXCLAMATION  &kp DA_AT             &kp DA_HASH               &kp DA_DOLLAR      &kp DA_PERCENT          &kp DA_CARET      &kp DA_AMPERSAND   &kp DA_ASTERISK  &kp DA_GRAVE  &kp DA_TILDE     &none
+&none  &kp DA_LESS_THAN    &kp DA_DOUBLE_QUOTES  &kp DA_LEFT_PARENTHESIS   &kp LS(LA(DA_N8))  &kp DA_LEFT_BRACKET     &kp DA_FSLH       &kp DA_MINUS       &kp DA_EQUAL     &kp DA_COLON  &kp DA_SEMI      &none
+&none  &kp DA_GT           &kp DA_SINGLE_QUOTE   &kp DA_RIGHT_PARENTHESIS  &kp LS(LA(DA_N9))  &kp DA_RIGHT_BRACKET    &kp DA_BACKSLASH  &kp DA_UNDERSCORE  &kp DA_PLUS      &kp DA_PIPE   &kp DA_QUESTION  &none
+                                                 &trans                    &trans             &trans                  &trans            &trans             &trans
             >;
         };
 
@@ -74,18 +73,18 @@
 
             display-name = "right";
             bindings = <
-&none  &kp DA_N1  &kp DA_N2  &kp DA_N3  &kp LG(DA_C)  &kp LG(DA_V)    &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_PAUSE  &kp K_NEXT  &kp C_VOLUME_UP    &none
-&none  &kp DA_N4  &kp DA_N5  &kp DA_N6  &none         &none           &kp LEFT        &kp DOWN          &kp UP       &kp RIGHT   &kp C_VOLUME_DOWN  &none
-&none  &kp DA_N7  &kp DA_N8  &kp DA_N9  &kp DA_N0     &none           &kp HOME        &kp PAGE_DOWN     &kp PAGE_UP  &kp END     &kp K_MUTE         &none
-                             &none      &none         &none           &none           &none             &none
+&none  &kp DA_N1  &kp DA_N2  &kp DA_N3  &kp DA_N4  &kp DA_N5    &kp DA_N6  &kp DA_N7      &kp DA_N8    &kp DA_N9  &kp DA_N0     &none
+&none  &none      &none      &none      &none      &none        &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp LG(DA_C)  &none
+&none  &none      &none      &none      &none      &none        &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp LG(DA_V)  &none
+                             &none      &none      &none        &none      &none          &none
             >;
         };
 
         tri {
             bindings = <
-&none  &kp LG(DA_N1)  &kp LG(DA_N2)  &kp LG(DA_N3)  &kp LG(DA_N4)  &kp LG(DA_N5)    &none   &none   &none   &none  &none  &none
-&none  &tmux_p1       &none          &none          &none          &none            &none   &none   &none   &none  &none  &none
-&none  &none          &none          &none          &none          &none            &none   &none   &none   &none  &none  &none
+&none  &kp LG(DA_N1)  &kp LG(DA_N2)  &kp LG(DA_N3)  &kp LG(DA_N4)  &kp LG(DA_N5)    &none   &none   &none   &none  &kp C_VOLUME_UP  &none
+&none  &tmux_p1       &none          &none          &none          &none            &none   &none   &none   &none  &kp C_VOL_DN     &none
+&none  &none          &none          &none          &none          &none            &none   &none   &none   &none  &kp K_MUTE       &none
                                      &trans         &trans         &trans           &trans  &trans  &trans
             >;
         };
