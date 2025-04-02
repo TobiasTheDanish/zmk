@@ -58,9 +58,9 @@
 
             display-name = "left";
             bindings = <
-&kp DA_LEFT_PARENTHESIS  &kp DA_RIGHT_PARENTHESIS  &kp DA_DOUBLE_QUOTES  &kp DA_SINGLE_QUOTE  &kp DA_A_RING   &none    &kp DA_FSLH       &kp DA_AT       &kp DA_UNDERSCORE  &kp DA_PLUS       &kp DA_MINUS    &none    
-&kp LS(LA(DA_N8))        &kp LS(LA(DA_N9))         &kp DA_DOLLAR         &kp DA_GRAVE         &kp DA_O_SLASH  &none    &kp DA_BACKSLASH  &kp DA_PERCENT  &kp DA_PIPE        &kp DA_AMPERSAND  &kp DA_STAR     &none     
-&none    &kp DA_LEFT_BRACKET      &kp DA_RIGHT_BRACKET      &kp DA_EXCLAMATION    &kp DA_EQUAL         &kp DA_AE       &kp DA_CARET      &kp DA_HASH     &kp DA_TILDE       &kp DA_LT         &kp DA_GT       &none       
+&none    &kp DA_LEFT_PARENTHESIS  &kp DA_RIGHT_PARENTHESIS  &kp DA_DOUBLE_QUOTES  &kp DA_SINGLE_QUOTE  &kp DA_A_RING       &kp DA_FSLH       &kp DA_AT       &kp DA_UNDERSCORE  &kp DA_PLUS       &kp DA_MINUS    &none    
+&none    &kp LS(LA(DA_N8))        &kp LS(LA(DA_N9))         &kp DA_DOLLAR         &kp DA_GRAVE         &kp DA_O_SLASH      &kp DA_BACKSLASH  &kp DA_PERCENT  &kp DA_PIPE        &kp DA_AMPERSAND  &kp DA_STAR     &none     
+&none    &kp DA_LEFT_BRACKET      &kp DA_RIGHT_BRACKET      &kp DA_EXCLAMATION    &kp DA_EQUAL         &kp DA_AE       &kp DA_CARET      &kp DA_HASH     &kp DA_TILDE       &kp DA_LT         &kp DA_GT           &none       
                                          &trans             &trans            &trans          &trans                   &trans                    &trans
             >;
         };
