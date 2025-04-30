@@ -6,6 +6,7 @@
 
 #include "keys_da.h"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -32,6 +33,41 @@
             #binding-cells = <0>;
             bindings = <&kp LC(DA_S) &kp DA_N1>;
             label = "TMUX_P1";
+        };
+
+        tmux_p2: tmux_p2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(DA_S) &kp DA_N2>;
+            label = "TMUX_P2";
+        };
+
+        tmux_p3: tmux_p3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(DA_S) &kp DA_N3>;
+            label = "TMUX_P3";
+        };
+
+        tmux_p4: tmux_p4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(DA_S) &kp DA_N4>;
+            label = "TMUX_P4";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <10 11>;
         };
     };
 
@@ -82,10 +118,10 @@
 
         tri {
             bindings = <
-&none  &kp LG(DA_N1)  &kp LG(DA_N2)  &kp LG(DA_N3)  &kp LG(DA_N4)  &kp LG(DA_N5)    &none   &none   &none   &none  &kp C_VOLUME_UP  &none
-&none  &tmux_p1       &none          &none          &none          &none            &none   &none   &none   &none  &kp C_VOL_DN     &none
-&none  &none          &none          &none          &none          &none            &none   &none   &none   &none  &kp K_MUTE       &none
-                                     &trans         &trans         &trans           &trans  &trans  &trans
+&none  &kp LG(DA_N1)  &kp LG(DA_N2)  &kp LG(DA_N3)  &kp LG(DA_N4)  &kp LG(DA_N5)    &tmux_p1      &tmux_p2      &tmux_p3      &tmux_p4  &kp C_VOLUME_UP  &none
+&none  &none          &none          &none          &none          &none            &none         &none         &none         &none     &kp C_VOL_DN     &none
+&none  &none          &none          &none          &none          &none            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &kp K_MUTE       &none
+                                     &trans         &trans         &trans           &trans        &trans        &trans
             >;
         };
 
