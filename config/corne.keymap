@@ -93,10 +93,10 @@
 
             display-name = "left";
             bindings = <
-&none  &kp DA_EXCLAMATION  &kp DA_AT             &kp DA_HASH               &kp DA_DOLLAR      &kp DA_PERCENT          &kp DA_CARET      &kp DA_AMPERSAND   &kp DA_ASTERISK  &kp DA_GRAVE  &kp DA_TILDE     &none
-&none  &kp DA_LESS_THAN    &kp DA_DOUBLE_QUOTES  &kp DA_LEFT_PARENTHESIS   &kp LS(LA(DA_N8))  &kp DA_LEFT_BRACKET     &kp DA_FSLH       &kp DA_MINUS       &kp DA_EQUAL     &kp DA_COLON  &kp DA_SEMI      &none
-&none  &kp DA_GT           &kp DA_SINGLE_QUOTE   &kp DA_RIGHT_PARENTHESIS  &kp LS(LA(DA_N9))  &kp DA_RIGHT_BRACKET    &kp DA_BACKSLASH  &kp DA_UNDERSCORE  &kp DA_PLUS      &kp DA_PIPE   &kp DA_QUESTION  &none
-                                                 &trans                    &trans             &trans                  &trans            &trans             &trans
+&none  &kp DA_EXCLAMATION  &kp DA_AT             &kp DA_HASH               &kp DA_DOLLAR       &kp DA_PERCENT          &kp DA_CARET      &kp DA_AMPERSAND   &kp DA_ASTERISK  &kp DA_GRAVE  &kp DA_TILDE     &none
+&none  &kp DA_LESS_THAN    &kp DA_DOUBLE_QUOTES  &kp DA_LEFT_PARENTHESIS   &kp DA_LEFT_BRACE   &kp DA_LEFT_BRACKET     &kp DA_FSLH       &kp DA_MINUS       &kp DA_EQUAL     &kp DA_COLON  &kp DA_SEMI      &none
+&none  &kp DA_GT           &kp DA_SINGLE_QUOTE   &kp DA_RIGHT_PARENTHESIS  &kp DA_RIGHT_BRACE  &kp DA_RIGHT_BRACKET    &kp DA_BACKSLASH  &kp DA_UNDERSCORE  &kp DA_PLUS      &kp DA_PIPE   &kp DA_QUESTION  &none
+                                                 &trans                    &trans              &trans                  &trans            &trans             &trans
             >;
         };
 
