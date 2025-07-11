@@ -93,7 +93,7 @@
 
             display-name = "left";
             bindings = <
-&none  &kp DA_EXCLAMATION  &kp LS(DA_N2)   &kp DA_HASH               &kp DA_LT          &kp DA_PERCENT          &kp DA_FSLH        &kp DA_AMPERSAND   &kp DA_EQUAL       &kp DA_QUESTION  &kp DA_ACUTE     &none
+&none  &kp DA_EXCLAMATION  &kp LS(DA_N2)   &kp DA_HASH               &kp DA_LT          &kp DA_PERCENT          &kp DA_AMPERSAND   &kp DA_FSLH        &kp DA_EQUAL       &kp DA_QUESTION  &kp DA_ACUTE     &none
 &none  &kp DA_A_RING       &kp DA_AE       &kp DA_LEFT_PARENTHESIS   &kp LA(LS(DA_N8))  &kp DA_LEFT_BRACKET     &kp RA(DA_SQT)     &kp RIGHT_SHIFT    &kp RIGHT_CONTROL  &kp RIGHT_ALT    &kp RIGHT_GUI    &none
 &none  &kp DA_ONE_HALF     &kp DA_O_SLASH  &kp DA_RIGHT_PARENTHESIS  &kp LS(LA(DA_N9))  &kp DA_RIGHT_BRACKET    &kp LA(LS(DA_N7))  &kp DA_UNDERSCORE  &kp DA_PLUS        &kp LA(DA_I)     &kp DA_QUESTION  &none
                                            &trans                    &trans             &trans                  &trans             &trans             &trans
